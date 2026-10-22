@@ -1,370 +1,171 @@
 <!DOCTYPE html>
-<html lang="uz" class="scroll-smooth">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nega biznesingizga targetolog kerak? | Professional yechim</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Phosphor Icons (for modern icons) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Professional Targetolog | Savdolarni oshirish</title>
     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Meta Pixel Code -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            900: '#1e3a8a',
-                        }
-                    }
-                }
-            }
-        }
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1345666860830388');
+    fbq('track', 'PageView');
     </script>
-    <style>
-        /* Custom Styles for gradients and animations */
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .transition-all-custom {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    </style>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
-<body class="font-sans text-gray-800 antialiased bg-gray-50">
+<body class="antialiased text-gray-800 bg-gray-50">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 transition-all-custom bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <i class="ph-fill ph-target text-brand-600 text-3xl"></i>
-                    <span class="font-bold text-xl tracking-tight text-gray-900">Target<span class="text-brand-600">Pro</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#muammo" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Muammo</a>
-                    <a href="#afzalliklar" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Afzalliklar</a>
-                    <a href="#jarayon" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Jarayon</a>
-                </div>
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="tel:+998995227125" class="text-gray-700 font-semibold hover:text-brand-600 transition-colors">
-                        +998 99 522 71 25
-                    </a>
-                    <a href="https://t.me/MrAzimjon_V" target="_blank" class="bg-brand-600 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-medium transition-all-custom shadow-lg shadow-brand-500/30">
-                        Bepul audit olish
-                    </a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                        <i class="ph ph-list text-3xl"></i>
-                    </button>
-                </div>
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <i class="fa-solid fa-bullseye"></i> Target<span class="text-gray-800">Pro</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-blue-500 hover:text-blue-700 text-2xl hidden md:block"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:mrazimjon7@gmail.com" class="text-gray-600 hover:text-red-500 text-2xl hidden md:block"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+998995227125" class="btn-primary text-sm md:text-base"><i class="fa-solid fa-phone"></i> +998 99 522 71 25</a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
-                <span class="inline-block py-1 px-3 rounded-full bg-blue-400/20 text-blue-100 text-sm font-semibold tracking-wider mb-6 border border-blue-400/30">
-                    BIZNESINGIZNI YANGI BOSQICHGA OLIB CHIQING
-                </span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-8">
-                    Nega biznesingizga <br class="hidden md:block" /> <span class="text-blue-300">professional targetolog</span> kerak?
-                </h1>
-                <p class="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed font-light">
-                    Reklama byudjetini shunchaki havoga sovurishni to'xtating. Aniq maqsadli auditoriyaga yo'naltirilgan, ma'lumotlarga asoslangan va savdoni karrasiga oshiruvchi tizimli reklamalarni yo'lga qo'yish vaqti keldi.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#aloqa" class="bg-white text-brand-900 hover:bg-gray-50 px-8 py-4 rounded-full font-bold text-lg transition-all-custom shadow-xl flex items-center justify-center gap-2">
-                        Konsultatsiya yozilish <i class="ph-bold ph-arrow-right"></i>
-                    </a>
-                    <a href="#afzalliklar" class="bg-brand-700/50 hover:bg-brand-700 text-white border border-brand-500/50 px-8 py-4 rounded-full font-medium text-lg transition-all-custom flex items-center justify-center">
-                        Batafsil ma'lumot
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Decorative wave -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
-            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-gray-50"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- The Problem Section -->
-    <section id="muammo" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                        Tugmani bosish bilan reklama qilish <span class="text-red-500 line-through decoration-4">kifoya emas</span>.
-                    </h2>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        Ko'pgina tadbirkorlar Instagram yoki Facebook'dagi "Boost Post" (Promote) tugmasini bosish orqali mijozlar oqimi keladi deb o'ylashadi. Afsuski, bu byudjetni platformalarga shunchaki sovg'a qilish bilan tengdir.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i class="ph-fill ph-warning-circle text-red-500 text-2xl flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>Noto'g'ri auditoriya:</strong> Reklamangizni mahsulotingizga umuman qiziqmaydigan odamlar ko'rmoqda.</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="ph-fill ph-warning-circle text-red-500 text-2xl flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>Tahlilning yo'qligi:</strong> Qaysi reklama foyda keltirayotgani va qaysi biri zarar qilayotganini bilmaysiz.</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="ph-fill ph-warning-circle text-red-500 text-2xl flex-shrink-0 mt-1"></i>
-                            <p class="text-gray-700"><strong>Kuygan byudjet:</strong> Xarajatlar oshib bormoqda, lekin real xaridlar va daromad o'smayapti.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Analytics" class="rounded-2xl shadow-2xl z-10 relative">
-                    <div class="absolute -bottom-6 -right-6 w-full h-full bg-brand-600 rounded-2xl z-0"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Benefits Section -->
-    <section id="afzalliklar" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Asosiy Afzalliklar</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Nega aynan professional targetolog?</h3>
-                <p class="text-gray-600 text-lg">
-                    Biznesingiz barqaror o'sishi uchun shunchaki "reklama yoqish" emas, balki chuqur o'ylangan marketing strategiyasi kerak.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Benefit 1 -->
-                <div class="feature-card transition-all-custom bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-brand-50 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="ph ph-crosshair text-3xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Aniq Auditoriyani Topish</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        Professional targetolog faqatgina yosh yoki hududni kiritibgina qolmaydi. U psixografik omillar, qiziqishlar, xulq-atvor va "lookalike" (o'xshash) auditoriyalardan foydalanib, mahsulotingizni xarid qilish ehtimoli eng yuqori bo'lgan insonlarni topadi.
-                    </p>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="feature-card transition-all-custom bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-green-50 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="ph ph-money text-3xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Byudjetni Optimizatsiya Qilish</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        Har bir sarflangan dollar yoki so'm qayerga ketayotganini nazorat qilamiz. Ishlamayotgan reklamalarni vaqtida o'chirib, eng arzon narxda eng ko'p natija (lid/xarid) olib kelayotgan kampaniyalarga byudjetni yo'naltiramiz.
-                    </p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="feature-card transition-all-custom bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="ph ph-chart-line-up text-3xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Yuqori ROI (Sarmoya Qaytimi)</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        Targetologning asosiy maqsadi layk yoki obunachi yig'ish emas, balki biznesingiz savdosini oshirishdir. Biz biznesingiz uchun aniq o'lchanadigan moliyaviy natijani ta'minlashga e'tibor qaratamiz (ROMI/ROI ko'rsatkichlarini oshirish).
-                    </p>
-                </div>
-
-                <!-- Benefit 4 -->
-                <div class="feature-card transition-all-custom bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-yellow-50 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div class="w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="ph ph-magnifying-glass-chart text-3xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Chuqur Tahlil va Metrikalar</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        CTR, CPC, CPA, CPM kabi metrikalarni doimiy kuzatib boramiz. Pixel va Conversions API orqali veb-saytingizdagi foydalanuvchi harakatlarini kuzatib, retargeting (qayta ishlash) kampaniyalarini mukammal sozlaymiz.
-                    </p>
-                </div>
-
-                <!-- Benefit 5 -->
-                <div class="feature-card transition-all-custom bg-white p-8 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
-                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6">
-                        <i class="ph ph-arrows-clockwise text-3xl"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Uzluksiz Optimizatsiya va A/B Test</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">
-                        Reklama muhiti doim o'zgaradi. Bitta reklama kreativi uzoq vaqt ishlamaydi. Biz doimiy ravishda yangi rasm, video va matnlarni A/B test orqali sinab ko'ramiz va eng yaxshisini masshtablaymiz (scaling).
-                    </p>
-                </div>
+    <!-- Asosiy Qism (Hero & Form birlashtirilgan) -->
+    <section class="min-h-screen pt-28 pb-12 flex items-center">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 
-                <!-- Benefit 6 -->
-                <div class="feature-card transition-all-custom bg-brand-600 p-8 rounded-2xl shadow-lg relative overflow-hidden flex flex-col justify-center text-center">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                    <h4 class="text-2xl font-bold text-white mb-4 relative z-10">Biznesingizni mutaxassisga ishonib topshiring</h4>
-                    <p class="text-brand-100 mb-6 relative z-10 text-sm">Siz o'z vaqtingizni biznes jarayonlarini boshqarishga sarflang, mijozlarni jalb qilishni bizga qo'yib bering.</p>
-                    <a href="#aloqa" class="inline-block bg-white text-brand-700 font-bold py-3 rounded-full relative z-10 hover:bg-gray-100 transition-colors">
-                        Aloqaga chiqish
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Methodology / Process Section -->
-    <section id="jarayon" class="py-24 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Ish Jarayoni Qanday Kechadi?</h3>
-                <p class="text-gray-600 text-lg">Tizimli yondashuv — muvaffaqiyat garovi. Har bir mijoz bilan quyidagi qadamlar asosida ishlaymiz.</p>
-            </div>
-
-            <div class="relative">
-                <!-- Connecting line for desktop -->
-                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -translate-y-1/2 z-0"></div>
-                
-                <div class="grid md:grid-cols-4 gap-8 relative z-10">
-                    <!-- Step 1 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative">
-                        <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto -mt-12 mb-4 border-4 border-gray-50 shadow-md">1</div>
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Audit va Tahlil</h4>
-                        <p class="text-sm text-gray-600">Oldingi reklamalar, raqobatchilar va bozorni chuqur o'rganib chiqish.</p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative mt-8 md:mt-0">
-                        <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto -mt-12 md:-mt-12 mb-4 border-4 border-gray-50 shadow-md">2</div>
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Strategiya</h4>
-                        <p class="text-sm text-gray-600">Sotuv voronkasi (Funnel), auditoriya segmentatsiyasi va byudjetni taqsimlash rejasini tuzish.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative mt-8 md:mt-0">
-                        <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto -mt-12 md:-mt-12 mb-4 border-4 border-gray-50 shadow-md">3</div>
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Ishga Tushirish</h4>
-                        <p class="text-sm text-gray-600">Pixel o'rnatish, kreativlarni yuklash va kampaniyalarni to'g'ri arxitektura bilan yoqish.</p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center relative mt-8 md:mt-0">
-                        <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto -mt-12 md:-mt-12 mb-4 border-4 border-gray-50 shadow-md">4</div>
-                        <h4 class="text-lg font-bold text-gray-900 mb-2">Masshtablash</h4>
-                        <p class="text-sm text-gray-600">Natija berayotgan reklamalarga byudjetni oshirish orqali savdoni karrasiga o'stirish.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Strong CTA Section -->
-    <section id="aloqa" class="py-24 bg-white relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl relative">
-                <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-brand-500 rounded-full blur-3xl opacity-20"></div>
-                <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
-                
-                <div class="p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
-                    <div class="md:w-3/5 text-center md:text-left">
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
-                            Raqobatchilaringiz allaqachon mijozlaringizni tortib olmoqda.
-                        </h2>
-                        <p class="text-gray-400 text-lg mb-8">
-                            Vaqtni va pulni yo'qotishni to'xtating. Bugunoq mutaxassis bilan bog'laning va biznesingiz uchun individual marketing strategiyasiga ega bo'ling. Birinchi konsultatsiya va loyiha auditi mutlaqo bepul.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <a href="tel:+998995227125" class="bg-brand-500 hover:bg-brand-400 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all-custom flex items-center justify-center gap-2 shadow-lg shadow-brand-500/30">
-                                <i class="ph-bold ph-phone-call"></i> +998 99 522 71 25
-                            </a>
-                            <a href="https://t.me/MrAzimjon_V" target="_blank" class="bg-[#2AABEE] hover:bg-[#2298d6] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all-custom flex items-center justify-center gap-2 shadow-lg shadow-[#2AABEE]/30">
-                                <i class="ph-bold ph-telegram-logo"></i> Telegram orqali yozish
-                            </a>
+                <!-- Chap tomon: Ma'lumot va harakatga chorlov -->
+                <div class="animate-fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Biznesingiz sotuvlarini aniq reklama orqali oshiring
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Faqat qiziquvchi xaridorlarni jalb qiling. Byudjetni tejagan holda, professional target sozlamalari orqali daromadingizni karrasiga ko'taramiz.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-phone text-blue-600 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Qo'ng'iroq qilish</p>
+                                <a href="tel:+998995227125" class="text-lg font-bold hover:text-blue-600 transition">+998 99 522 71 25</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-envelope text-red-500 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Elektron pochta</p>
+                                <a href="mailto:mrazimjon7@gmail.com" class="text-lg font-bold hover:text-red-500 transition">mrazimjon7@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-brands fa-telegram text-blue-500 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Telegram orqali yozish</p>
+                                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-lg font-bold hover:text-blue-500 transition">@MrAzimjon_V</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="md:w-2/5">
-                        <form class="bg-white p-6 rounded-2xl shadow-xl">
-                            <h4 class="text-xl font-bold text-gray-900 mb-4 text-center">So'rovnoma qoldiring</h4>
-                            <div class="mb-4">
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Ismingiz</label>
-                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="Azizbek">
-                            </div>
-                            <div class="mb-4">
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Telefon raqamingiz</label>
-                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="+998 90 123 45 67">
-                            </div>
-                            <div class="mb-6">
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Biznesingiz yo'nalishi</label>
-                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="Masalan: Mebel ishlab chiqarish">
-                            </div>
-                            <button type="button" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 rounded-lg transition-colors">
-                                Jo'natish
-                            </button>
-                            <p class="text-xs text-center text-gray-500 mt-3">Ma'lumotlaringiz maxfiyligi kafolatlanadi.</p>
-                        </form>
-                    </div>
                 </div>
+
+                <!-- O'ng tomon: Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 animate-fade-left">
+                    <h3 class="text-2xl font-bold mb-2">Bepul Konsultatsiya</h3>
+                    <p class="text-gray-500 mb-6">Ma'lumotlaringizni qoldiring, tez orada aloqaga chiqamiz.</p>
+                    
+                    <form id="contactForm" name="google-sheet-form">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Ismingiz</label>
+                            <input type="text" name="Ism" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Ali Valiyev">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Telefon raqamingiz</label>
+                            <input type="tel" name="Telefon" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="+998 90 123 45 67">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Biznesingiz haqida (ixtiyoriy)</label>
+                            <textarea name="Xabar" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Qaysi sohada faoliyat yuritasiz?"></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Jo'natish va Boshlash
+                        </button>
+                        
+                        <div id="responseMessage" class="mt-4 text-center font-medium hidden p-3 rounded-lg"></div>
+                    </form>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center gap-2 mb-4 md:mb-0">
-                    <i class="ph-fill ph-target text-brand-600 text-2xl"></i>
-                    <span class="font-bold text-xl tracking-tight text-gray-900">Target<span class="text-brand-600">Pro</span></span>
-                </div>
-                <div class="flex space-x-6 items-center">
-                    <a href="tel:+998995227125" class="text-gray-600 hover:text-brand-500 font-semibold transition-colors">+998 99 522 71 25</a>
-                    <a href="#" class="text-gray-400 hover:text-brand-500 transition-colors"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
-                    <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-gray-400 hover:text-[#2AABEE] transition-colors"><i class="ph-fill ph-telegram-logo text-2xl"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
-                </div>
-            </div>
-            <div class="mt-8 border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">
-                    &copy; 2026 TargetPro. Barcha huquqlar himoyalangan.
-                </p>
-                <p class="text-gray-500 text-sm mt-2 md:mt-0">
-                    Toshkent, O'zbekiston
-                </p>
-            </div>
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400 text-sm">
+            © 2026 TargetPro. Barcha huquqlar himoyalangan.
         </div>
     </footer>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1345666860830388');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Google Sheets va Meta Pixel Integratsiya Skripti -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxsHz2gI3J9JG0W5ikhGrT14PbwdLZ3mNryh3PFarqcXAbMpFFxUVH0xTwS2oVtZHN/exec';
+        const form = document.forms['google-sheet-form'];
+        const submitBtn = document.getElementById('submitBtn');
+        const responseMessage = document.getElementById('responseMessage');
 
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            // Tugma holatini o'zgartirish
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Yuborilmoqda...';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            responseMessage.classList.add('hidden');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    // Muvaffaqiyatli xabar
+                    responseMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+                    responseMessage.classList.add('bg-green-100', 'text-green-700');
+                    responseMessage.innerText = "Ma'lumot qabul qilindi. Tez orada siz bilan bog'lanamiz!";
+                    
+                    form.reset();
+                    
+                    // Meta Pixel ga Lead hodisasini yuborish
+                    if(typeof fbq === 'function') {
+                        fbq('track', 'Lead');
+                    }
+                })
+                .catch(error => {
+                    // Xatolik xabari
+                    responseMessage.classList.remove('hidden', 'bg-green-100', 'text-green-700');
+                    responseMessage.classList.add('bg-red-100', 'text-red-700');
+                    responseMessage.innerText = "Xatolik yuz berdi. Iltimos, raqam orqali bog'laning.";
+                    console.error('Error!', error.message);
+                })
+                .finally(() => {
+                    // Tugmani asl holiga qaytarish
+                    submitBtn.innerHTML = "Jo'natish va Boshlash";
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                });
+        });
+    </script>
 </body>
 </html>
