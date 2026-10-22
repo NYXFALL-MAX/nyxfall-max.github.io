@@ -383,6 +383,44 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<form id="contactForm" class="contact-form">
+  <input type="text" name="Ism" placeholder="Ismingiz" required>
+  <input type="tel" name="Telefon" placeholder="Telefon raqamingiz" required>
+  <textarea name="Xabar" placeholder="Qo'shimcha xabar (ixtiyoriy)" rows="4"></textarea>
+  <button type="submit" class="btn-primary w-full" id="submitBtn">Jo'natish</button>
+  <p id="responseMessage" style="display: none; margin-top: 15px; color: green; font-weight: 600;">Ma'lumotlaringiz muvaffaqiyatli yuborildi!</p>
+</form>
 
+<script>
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const responseMessage = document.getElementById('responseMessage');
+  
+  // https://script.google.com/macros/s/AKfycbx8tx0386VvqJW1jHU-2WprDwRBqWk99U2zZC5T5eCA0Mu1HVGJv07NJ6Pzge3CkcIPqw/exec
+  const scriptURL = 'YOUR_WEB_APP_URL_HERE';
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    submitBtn.innerText = 'Yuborilmoqda...';
+    submitBtn.disabled = true;
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        responseMessage.style.display = 'block';
+        responseMessage.style.color = 'green';
+        responseMessage.innerText = "Ma'lumotlaringiz muvaffaqiyatli yuborildi!";
+        form.reset();
+        submitBtn.innerText = "Jo'natish";
+        submitBtn.disabled = false;
+      })
+      .catch(error => {
+        responseMessage.style.display = 'block';
+        responseMessage.style.color = 'red';
+        responseMessage.innerText = "Xatolik yuz berdi. Qaytadan urinib ko'ring.";
+        submitBtn.innerText = "Jo'natish";
+        submitBtn.disabled = false;
+      });
+  });
+</script>
 </body>
 </html>
