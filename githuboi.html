@@ -383,12 +383,29 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Google Sheets formasi -->
 <form id="contactForm" class="contact-form">
-  <input type="text" name="Ism" placeholder="Ismingiz" required>
-  <input type="tel" name="Telefon" placeholder="Telefon raqamingiz" required>
-  <textarea name="Xabar" placeholder="Qo'shimcha xabar (ixtiyoriy)" rows="4"></textarea>
-  <button type="submit" class="btn-primary w-full" id="submitBtn">Jo'natish</button>
-  <p id="responseMessage" style="display: none; margin-top: 15px; color: green; font-weight: 600;">Ma'lumotlaringiz muvaffaqiyatli yuborildi!</p>
+    <input type="text" name="Ism" placeholder="Ismingiz" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4">
+    
+    <input type="tel" name="Telefon" placeholder="Telefon raqamingiz" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4">
+    
+    <textarea name="Xabar" placeholder="Biznesingiz haqida qisqacha (ixtiyoriy)" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4"></textarea>
+    
+    <button type="submit" class="btn-primary w-full text-center" id="submitBtn">Konsultatsiya Olish</button>
+    
+    <p id="responseMessage" class="text-center mt-4 hidden font-semibold"></p>
+</form>
+<!-- Google Sheets formasi -->
+<form id="contactForm" class="contact-form">
+    <input type="text" name="Ism" placeholder="Ismingiz" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4">
+    
+    <input type="tel" name="Telefon" placeholder="Telefon raqamingiz" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4">
+    
+    <textarea name="Xabar" placeholder="Biznesingiz haqida qisqacha (ixtiyoriy)" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition mb-4"></textarea>
+    
+    <button type="submit" class="btn-primary w-full text-center" id="submitBtn">Konsultatsiya Olish</button>
+    
+    <p id="responseMessage" class="text-center mt-4 hidden font-semibold"></p>
 </form>
 
 <script>
@@ -396,7 +413,7 @@ src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
   const submitBtn = document.getElementById('submitBtn');
   const responseMessage = document.getElementById('responseMessage');
   
-  // https://script.google.com/macros/s/AKfycbx8tx0386VvqJW1jHU-2WprDwRBqWk99U2zZC5T5eCA0Mu1HVGJv07NJ6Pzge3CkcIPqw/exec
+  // https://script.google.com/macros/s/AKfycbyxsHz2gI3J9JG0W5ikhGrT14PbwdLZ3mNryh3PFarqcXAbMpFFxUVH0xTwS2oVtZHN/exec
   const scriptURL = 'YOUR_WEB_APP_URL_HERE';
 
   form.addEventListener('submit', e => {
@@ -407,17 +424,21 @@ src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         responseMessage.style.display = 'block';
-        responseMessage.style.color = 'green';
+        responseMessage.className = "text-center mt-4 font-semibold text-green-500";
         responseMessage.innerText = "Ma'lumotlaringiz muvaffaqiyatli yuborildi!";
         form.reset();
-        submitBtn.innerText = "Jo'natish";
+        submitBtn.innerText = "Konsultatsiya Olish";
         submitBtn.disabled = false;
+        
+        if(typeof fbq === 'function') {
+            fbq('track', 'Lead');
+        }
       })
       .catch(error => {
         responseMessage.style.display = 'block';
-        responseMessage.style.color = 'red';
+        responseMessage.className = "text-center mt-4 font-semibold text-red-500";
         responseMessage.innerText = "Xatolik yuz berdi. Qaytadan urinib ko'ring.";
-        submitBtn.innerText = "Jo'natish";
+        submitBtn.innerText = "Konsultatsiya Olish";
         submitBtn.disabled = false;
       });
   });
