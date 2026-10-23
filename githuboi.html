@@ -8,6 +8,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1345666860830388');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body class="antialiased text-gray-800 bg-gray-50">
 
@@ -18,14 +36,14 @@
                 <i class="fa-solid fa-bullseye"></i> Target<span class="text-gray-800">Pro</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-blue-500 hover:text-blue-700 text-2xl hidden md:block"><i class="fa-brands fa-telegram"></i></a>
-                <a href="mailto:mrazimjon7@gmail.com" class="text-gray-600 hover:text-red-500 text-2xl hidden md:block"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:+998995227125" class="btn-primary text-sm md:text-base"><i class="fa-solid fa-phone"></i> +998 99 522 71 25</a>
+                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-blue-500 hover:text-blue-700 text-2xl hidden md:block" onclick="fbq('track', 'Contact');"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:mrazimjon7@gmail.com" class="text-gray-600 hover:text-red-500 text-2xl hidden md:block" onclick="fbq('track', 'Contact');"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+998995227125" class="btn-primary text-sm md:text-base" onclick="fbq('track', 'Contact');"><i class="fa-solid fa-phone"></i> +998 99 522 71 25</a>
             </div>
         </div>
     </header>
 
-    <!-- Asosiy Qism (Hero & Form birlashtirilgan) -->
+    <!-- Asosiy Qism -->
     <section class="min-h-screen pt-28 pb-12 flex items-center">
         <div class="container mx-auto px-4 md:px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -44,21 +62,21 @@
                             <i class="fa-solid fa-phone text-blue-600 text-xl w-6 text-center"></i>
                             <div>
                                 <p class="text-sm text-gray-500">Qo'ng'iroq qilish</p>
-                                <a href="tel:+998995227125" class="text-lg font-bold hover:text-blue-600 transition">+998 99 522 71 25</a>
+                                <a href="tel:+998995227125" class="text-lg font-bold hover:text-blue-600 transition" onclick="fbq('track', 'Contact');">+998 99 522 71 25</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
                             <i class="fa-solid fa-envelope text-red-500 text-xl w-6 text-center"></i>
                             <div>
                                 <p class="text-sm text-gray-500">Elektron pochta</p>
-                                <a href="mailto:mrazimjon7@gmail.com" class="text-lg font-bold hover:text-red-500 transition">mrazimjon7@gmail.com</a>
+                                <a href="mailto:mrazimjon7@gmail.com" class="text-lg font-bold hover:text-red-500 transition" onclick="fbq('track', 'Contact');">mrazimjon7@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
                             <i class="fa-brands fa-telegram text-blue-500 text-xl w-6 text-center"></i>
                             <div>
                                 <p class="text-sm text-gray-500">Telegram orqali yozish</p>
-                                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-lg font-bold hover:text-blue-500 transition">@MrAzimjon_V</a>
+                                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-lg font-bold hover:text-blue-500 transition" onclick="fbq('track', 'Contact');">@MrAzimjon_V</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +103,8 @@
                             <textarea name="Xabar" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Qaysi sohada faoliyat yuritasiz?"></textarea>
                         </div>
                         
-                        <button type="submit" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <!-- Qizil bilan belgilangan Lead tugmasi -->
+                        <button type="submit" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1" onclick="fbq('track', 'Lead');">
                             Jo'natish va Boshlash
                         </button>
                         
@@ -104,9 +123,10 @@
         </div>
     </footer>
 
-    <!-- Google Sheets va Meta Pixel Integratsiya Skripti -->
+    <!-- Google Sheets Integratsiya Skripti -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0xTO3bSpyexZFhHcqhQ7DdNmV4RKgWikdNJol6ESilQTWQs9TocVDxlIufu1pwznz/exec';
+        // Siz taqdim etgan aniq manzil
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxsHz2gI3J9JG0W5ikhGrT14PbwdLZ3mNryh3PFarqcXAbMpFFxUVH0xTwS2oVtZHN/exec';
         const form = document.forms['google-sheet-form'];
         const submitBtn = document.getElementById('submitBtn');
         const responseMessage = document.getElementById('responseMessage');
@@ -114,7 +134,6 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             
-            // Tugma holatini o'zgartirish
             submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Yuborilmoqda...';
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
@@ -122,49 +141,23 @@
 
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    // Muvaffaqiyatli xabar
                     responseMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700');
                     responseMessage.classList.add('bg-green-100', 'text-green-700');
                     responseMessage.innerText = "Ma'lumot qabul qilindi. Tez orada siz bilan bog'lanamiz!";
-                    
                     form.reset();
-                    
-                    // Meta Pixel ga Lead hodisasini yuborish
-                    if(typeof fbq === 'function') {
-                        fbq('track', 'Lead');
-                    }
                 })
                 .catch(error => {
-                    // Xatolik xabari
                     responseMessage.classList.remove('hidden', 'bg-green-100', 'text-green-700');
                     responseMessage.classList.add('bg-red-100', 'text-red-700');
                     responseMessage.innerText = "Xatolik yuz berdi. Iltimos, raqam orqali bog'laning.";
                     console.error('Error!', error.message);
                 })
                 .finally(() => {
-                    // Tugmani asl holiga qaytarish
                     submitBtn.innerHTML = "Jo'natish va Boshlash";
                     submitBtn.disabled = false;
                     submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
                 });
         });
     </script>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1345666860830388');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 </html>
