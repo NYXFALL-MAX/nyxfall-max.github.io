@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Targetolog | Savdolarni oshirish</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1345666860830388');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1345666860830388&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <i class="fa-solid fa-bullseye"></i> Target<span class="text-gray-800">Pro</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-blue-500 hover:text-blue-700 text-2xl hidden md:block" onclick="fbq('track', 'Contact');"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:mrazimjon7@gmail.com" class="text-gray-600 hover:text-red-500 text-2xl hidden md:block" onclick="fbq('track', 'Contact');"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+998995227125" class="btn-primary text-sm md:text-base" onclick="fbq('track', 'Contact');"><i class="fa-solid fa-phone"></i> +998 99 522 71 25</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Asosiy Qism -->
+    <section class="min-h-screen pt-28 pb-12 flex items-center">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Chap tomon: Ma'lumot va harakatga chorlov -->
+                <div class="animate-fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Biznesingiz sotuvlarini aniq reklama orqali oshiring
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Faqat qiziquvchi xaridorlarni jalb qiling. Byudjetni tejagan holda, professional target sozlamalari orqali daromadingizni karrasiga ko'taramiz.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-phone text-blue-600 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Qo'ng'iroq qilish</p>
+                                <a href="tel:+998995227125" class="text-lg font-bold hover:text-blue-600 transition" onclick="fbq('track', 'Contact');">+998 99 522 71 25</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-envelope text-red-500 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Elektron pochta</p>
+                                <a href="mailto:mrazimjon7@gmail.com" class="text-lg font-bold hover:text-red-500 transition" onclick="fbq('track', 'Contact');">mrazimjon7@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-brands fa-telegram text-blue-500 text-xl w-6 text-center"></i>
+                            <div>
+                                <p class="text-sm text-gray-500">Telegram orqali yozish</p>
+                                <a href="https://t.me/MrAzimjon_V" target="_blank" class="text-lg font-bold hover:text-blue-500 transition" onclick="fbq('track', 'Contact');">@MrAzimjon_V</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O'ng tomon: Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 animate-fade-left">
+                    <h3 class="text-2xl font-bold mb-2">Bepul Konsultatsiya</h3>
+                    <p class="text-gray-500 mb-6">Ma'lumotlaringizni qoldiring, tez orada aloqaga chiqamiz.</p>
+                    
+                    <form id="contactForm" name="google-sheet-form">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Ismingiz</label>
+                            <input type="text" name="Ism" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Ali Valiyev">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Telefon raqamingiz</label>
+                            <input type="tel" name="Telefon" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="+998 90 123 45 67">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Biznesingiz haqida (ixtiyoriy)</label>
+                            <textarea name="Xabar" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" placeholder="Qaysi sohada faoliyat yuritasiz?"></textarea>
+                        </div>
+                        
+                        <!-- Qizil bilan belgilangan Lead tugmasi -->
+                        <button type="submit" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1" onclick="fbq('track', 'Lead');">
+                            Jo'natish va Boshlash
+                        </button>
+                        
+                        <div id="responseMessage" class="mt-4 text-center font-medium hidden p-3 rounded-lg"></div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400 text-sm">
+            © 2026 TargetPro. Barcha huquqlar himoyalangan.
+        </div>
+    </footer>
+
+    <!-- Google Sheets Integratsiya Skripti -->
+    <script>
+        // Siz taqdim etgan aniq manzil
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxsHz2gI3J9JG0W5ikhGrT14PbwdLZ3mNryh3PFarqcXAbMpFFxUVH0xTwS2oVtZHN/exec';
+        const form = document.forms['google-sheet-form'];
+        const submitBtn = document.getElementById('submitBtn');
+        const responseMessage = document.getElementById('responseMessage');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Yuborilmoqda...';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            responseMessage.classList.add('hidden');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    responseMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+                    responseMessage.classList.add('bg-green-100', 'text-green-700');
+                    responseMessage.innerText = "Ma'lumot qabul qilindi. Tez orada siz bilan bog'lanamiz!";
+                    form.reset();
+                })
+                .catch(error => {
+                    responseMessage.classList.remove('hidden', 'bg-green-100', 'text-green-700');
+                    responseMessage.classList.add('bg-red-100', 'text-red-700');
+                    responseMessage.innerText = "Xatolik yuz berdi. Iltimos, raqam orqali bog'laning.";
+                    console.error('Error!', error.message);
+                })
+                .finally(() => {
+                    submitBtn.innerHTML = "Jo'natish va Boshlash";
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                });
+        });
+    </script>
+</body>
+</html>
